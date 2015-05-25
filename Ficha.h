@@ -14,11 +14,21 @@ using namespace std;
 class Ficha {
 private:
     string F; //F = FICHA
+    string jugador;
     
 public:
-    Ficha();
+    Ficha(string);
     Ficha(const Ficha& orig);
     virtual ~Ficha();
+    
+    string getFicha();
+    string getJugador();
+    
+    void setFicha(string);
+    void setJugador(string);
+    
+    string toString();
+    
 
 };
 
