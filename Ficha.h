@@ -17,7 +17,7 @@ private:
     string jugador;
     
 public:
-    Ficha(string);
+    Ficha(string,string);
     Ficha(const Ficha& orig);
     virtual ~Ficha();
     
@@ -28,8 +28,6 @@ public:
     void setJugador(string);
     
     string toString();
-    
-
 };
 
 #endif	/* FICHA_H */
