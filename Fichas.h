@@ -1,6 +1,8 @@
 /* 
  * File:   Ficha.h
- * Author: oscar
+ * Author: Oscar Muñoz Bernales
+ *         Jean Cid Bustos
+ *         Gabriel Sanhueza ...
  *
  * Created on 25 de mayo de 2015, 03:16 PM
  */
