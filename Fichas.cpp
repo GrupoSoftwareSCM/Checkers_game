@@ -19,6 +19,12 @@ string Fichas::getFichas(){
 string Fichas::getJugador(){
     return jugador;
 }
+int Fichas::getPosh(){
+    return posH;
+}
+int Fichas::getPosv(){
+    return posV;
+}
 
 
 void Fichas::setFichas(string r){
@@ -28,7 +34,13 @@ void Fichas::setFichas(string r){
 void Fichas::setJugador(string j){
     this->jugador = j;
 }
+void Fichas::setPosh(int pos){
+    this->posH = pos;
+}
+void Fichas::setPosv(int pos){
+    this->posV = pos;
+}
 
 string Fichas::toString(){
-    return " Jugador: "+jugador+" ficha: "+Ficha;
+    return " Jugador: "+jugador+" ficha: "+Ficha+" posicion: ("+posH+","+posV+")";
 }
