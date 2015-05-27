@@ -8,6 +8,7 @@
 #include "Fichas.h"
 #include <string>
 #include <string.h>
+#include <iostream>
 
 Fichas::Fichas() {
     this->Ficha = "";
@@ -41,6 +42,6 @@ void Fichas::setPosv(int pos){
     this->posV = pos;
 }
 
-string Fichas::toString(){
-    return " Jugador: "+jugador+" ficha: "+Ficha+" posicion: ("+posH+","+posV+")";
+void Fichas::listar(){
+    cout<<" Jugador: "<<jugador<<" ficha: "<<Ficha<<" posicion("<<posH<<","<<posV<<")"<<endl;
 }
