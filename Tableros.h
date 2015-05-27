@@ -7,25 +7,25 @@
  * Created on 14 de mayo de 2015, 03:48 PM
  */
 
-#ifndef TABLERO_H
-#define	TABLERO_H
+#ifndef TABLEROS_H
+#define	TABLEROS_H
 
 #include <string>
+#include "Fichas.h"
 
 using namespace std;
-class Tablero {
+#define T 11
+class Tableros{
 private:
-    string T[9][9];
+    string Tablero[T][T];
 
 public:
-    Tablero();
-    void llenar();
+    Tableros();
+    void llenar();//Fichas[],Fichas[]);
     void Dibujar();
     void Listar();
-    Tablero(const Tablero& orig);
-    virtual ~Tablero();
 
 };
 
-#endif	/* TABLERO_H */
+#endif	/* TABLEROS_H */
 

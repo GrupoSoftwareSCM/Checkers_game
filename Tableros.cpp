@@ -8,6 +8,7 @@
  */
 
 #include "Tableros.h"
+#include "Fichas.h"
 #include <cstdlib>
 #include <iostream>
 #include <stdlib.h>
@@ -16,59 +17,58 @@
 
 using namespace std;
 
-Tablero::Tablero() {
+Tableros::Tableros() {
     
 }
 
-void Tablero::llenar(){
+void Tableros::llenar(){//Fichas cpu[],Fichas jugador[]){
     int i,j;
     
-    T[0][0] = 92;  
+    Tablero[0][0] = 92;  
     
-    T[0][1] = 'A'; // |
-    T[0][2] = 'B'; // |
-    T[0][3] = 'C'; // |
-    T[0][4] = 'D'; // |     COORDENADAS ARRIBA
-    T[0][5] = 'E'; // |
-    T[0][6] = 'F'; // |
-    T[0][7] = 'G'; // |
-    T[0][8] = 'H'; // |
+    Tablero[0][1] = '0'; // |
+    Tablero[0][2] = '1'; // |
+    Tablero[0][3] = '2'; // |
+    Tablero[0][4] = '3'; // |     COORDENADAS HORIZONTALES
+    Tablero[0][5] = '4'; // |
+    Tablero[0][6] = '5'; // |
+    Tablero[0][7] = '6'; // |
+    Tablero[0][8] = '7'; // |
+    Tablero[0][9] = '8'; // |
+    Tablero[0][10] = '9'; // |
     
-    T[1][0] = '1'; // |
-    T[2][0] = '2'; // |
-    T[3][0] = '3'; // |
-    T[4][0] = '4'; // |
-    T[5][0] = '5'; // |     COORDENADAS COSTADO
-    T[6][0] = '6'; // |
-    T[7][0] = '7'; // |
-    T[8][0] = '8'; // |
+    Tablero[1][0] = '0'; // |
+    Tablero[2][0] = '1'; // |
+    Tablero[3][0] = '2'; // |
+    Tablero[4][0] = '3'; // |
+    Tablero[5][0] = '4'; // |     COORDENADAS VERTICALES
+    Tablero[6][0] = '5'; // |
+    Tablero[7][0] = '6'; // |
+    Tablero[8][0] = '7'; // |
+    Tablero[9][0] = '8'; // |
+    Tablero[10][0] = '9'; // |
             
-    for(i=1;i<9;i++){
-        for(j=1;j<9;j++){
+    for(i=1;i<11;i++){
+        for(j=1;j<11;j++){
             if((i+j)%2 == 0){
-                T[i][j] = '*';
+                Tablero[i][j] = '*';
             }
             else{
-                T[i][j] = '-';
+                Tablero[i][j] = '-';
             }
         }
     }
     
 }
-void Tablero::Dibujar(){
+void Tableros::Dibujar(){
     int i,j;
-    for(i=0;i<9;i++){
-        //cout<<"\t";
-        for(j=0;j<9;j++){
-            cout<<T[i][j]<<"  ";
+    for(i=0;i<11;i++){
+        cout<<"\t\t\t";
+        for(j=0;j<11;j++){
+            cout<<Tablero[i][j]<<"  ";
         }
         cout<<endl;
     }
-}
-Tablero::Tablero(const Tablero& orig) {
-}
-
-Tablero::~Tablero() {
 }
 
 

@@ -5,30 +5,28 @@
  * Created on 25 de mayo de 2015, 03:16 PM
  */
 
-#ifndef FICHA_H
-#define	FICHA_H
+#ifndef FICHAS_H
+#define	FICHAS_H
 
 #include <string>
 using namespace std;
 
-class Ficha {
+class Fichas {
 private:
-    string F; //F = FICHA
+    string Ficha;
     string jugador;
     
 public:
-    Ficha(string,string);
-    Ficha(const Ficha& orig);
-    virtual ~Ficha();
+    Fichas();
     
-    string getFicha();
+    string getFichas();
     string getJugador();
     
-    void setFicha(string);
+    void setFichas(string);
     void setJugador(string);
     
     string toString();
 };
 
-#endif	/* FICHA_H */
+#endif	/* FICHAS_H */
 

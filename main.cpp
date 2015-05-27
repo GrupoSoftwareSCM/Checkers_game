@@ -14,19 +14,35 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string>
 
-
+#define F 10
 using namespace std;
 
 /*
  *
  */
-int main(int argc, char** argv[]) {
-
-    Tablero Damas;
-    Ficha F(" ","cpu");
-    //Damas.llenar();
-    //Damas.Dibujar();
-    return 0;
+void llenarFichas(Fichas Ficha[],string jugador){
+    int i;
+    for(i=0;i<F;i++){
+        Ficha[i].setFichas("p");
+        Ficha[i].setJugador(jugador);
+    }
 }
-
+int main(int argc, char** argv[]) {
+    
+    
+    Tableros Damas;
+    
+    Fichas cpu[F];
+    Fichas jugador[F];
+    
+    llenarFichas(cpu,"cpu");
+    llenarFichas(jugador,"jugador");
+    
+    Damas.llenar();
+    Damas.Dibujar();
+    return 0;
+    
+    
+}

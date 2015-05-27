@@ -9,39 +9,26 @@
 #include <string>
 #include <string.h>
 
-Ficha::Ficha(string r, string j) {
-    if(r.compare(" ") == 0){
-        F = 'p'; // P DE PEON
-        jugador = j;
-    }
-    else{
-        F = r; // R DE REINA
-        jugador = j;
-    }
+Fichas::Fichas() {
+    this->Ficha = "";
+    this->jugador = "";
 }
-
-Ficha::Ficha(const Ficha& orig) {
+string Fichas::getFichas(){
+    return Ficha;
 }
-
-Ficha::~Ficha() {
-}
-
-string Ficha::getFicha(){
-    return F;
-}
-string Ficha::getJugador(){
+string Fichas::getJugador(){
     return jugador;
 }
 
 
-void Ficha::setFicha(string r){
-    F = r;
+void Fichas::setFichas(string r){
+    this->Ficha = r;
     
 }
-void Ficha::setJugador(string j){
-    jugador = j;
+void Fichas::setJugador(string j){
+    this->jugador = j;
 }
 
-string Ficha::toString(){
-    return " Jugador:"+jugador+"ficha: "+F;
+string Fichas::toString(){
+    return " Jugador: "+jugador+" ficha: "+Ficha;
 }
