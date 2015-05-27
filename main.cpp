@@ -9,7 +9,8 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "Tablero.h"
+#include "Tableros.h"
+#include "Fichas.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,9 +24,9 @@ using namespace std;
 int main(int argc, char** argv[]) {
 
     Tablero Damas;
-    
-    Damas.llenar();
-    Damas.Dibujar();
+    Ficha F(" ","cpu");
+    //Damas.llenar();
+    //Damas.Dibujar();
     return 0;
 }
 

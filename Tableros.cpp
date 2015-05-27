@@ -7,7 +7,7 @@
  * Created on 14 de mayo de 2015, 03:48 PM
  */
 
-#include "Tablero.h"
+#include "Tableros.h"
 #include <cstdlib>
 #include <iostream>
 #include <stdlib.h>

@@ -35,8 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Ficha.o \
-	${OBJECTDIR}/Tablero.o \
+	${OBJECTDIR}/Fichas.o \
+	${OBJECTDIR}/Tableros.o \
 	${OBJECTDIR}/main.o
 
 
@@ -64,15 +64,15 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/checkers_game: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/checkers_game ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Ficha.o: Ficha.cpp 
+${OBJECTDIR}/Fichas.o: Fichas.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ficha.o Ficha.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fichas.o Fichas.cpp
 
-${OBJECTDIR}/Tablero.o: Tablero.cpp 
+${OBJECTDIR}/Tableros.o: Tableros.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablero.o Tablero.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tableros.o Tableros.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

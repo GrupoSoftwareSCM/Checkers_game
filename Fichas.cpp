@@ -5,7 +5,7 @@
  * Created on 25 de mayo de 2015, 03:16 PM
  */
 
-#include "Ficha.h"
+#include "Fichas.h"
 #include <string>
 #include <string.h>
 
