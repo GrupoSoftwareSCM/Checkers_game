@@ -15,33 +15,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
+#include <string.h>
 
-#define F 10
 using namespace std;
 
 /*
  *
  */
-void llenarFichas(Fichas Ficha[],string jugador){
-    int i;
-    for(i=0;i<F;i++){
-        Ficha[i].setFichas("p");
-        Ficha[i].setJugador(jugador);
-    }
-}
+
 int main(int argc, char** argv[]) {
     
     
     Tableros Damas;
-    
-    Fichas cpu[F];
-    Fichas jugador[F];
-    
-    llenarFichas(cpu,"cpu");
-    llenarFichas(jugador,"jugador");
-    
+        
     Damas.llenar();
     Damas.Dibujar();
+    
+    int i,j,m;
+    cout<<"seleccione una ficha: "<<endl;;
+    cout<<"coordenadas verticales: ";
+    cin>>i;
+    cout<<"coordenadas horizontales: ";
+    cin>>j;
+    cout<<"izquierda[1] o derecha[2]: ";
+    cin>>m;
+    
+    Damas.mover(i+1,j+1,m);
+    
+    Damas.Dibujar();
+    
     return 0;
     
     
