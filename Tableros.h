@@ -18,13 +18,11 @@ using namespace std;
 class Tableros{
 private:
     string Tablero[T][T];
-
 public:
     Tableros();
-    void llenar();//Fichas[],Fichas[]);
+    void llenar();
     void Dibujar();
-    void Listar();
-
+    void mover(int,int,int);
 };
 
 #endif	/* TABLEROS_H */
