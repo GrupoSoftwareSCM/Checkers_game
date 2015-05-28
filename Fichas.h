@@ -21,7 +21,7 @@ private:
     int posV;
     
 public:
-    Fichas();
+    Fichas(string,string,int,int);
     
     string getFichas();
     string getJugador();
