@@ -12,11 +12,11 @@
 #include <string.h>
 #include <iostream>
 
-Fichas::Fichas() {
-    this->Ficha = "";
-    this->jugador = "";
-    this->posH = 0;
-    this->posV = 0;
+Fichas::Fichas(string f,string j,int h,int v) {
+    this->Ficha = f;
+    this->jugador = j;
+    this->posH = h;
+    this->posV = v;
 }
 
 //METODOS DE OBTENCIO
